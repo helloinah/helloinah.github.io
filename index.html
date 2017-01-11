@@ -11,12 +11,27 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        
+        <button class="accordion">{{ post.title }}</button>
+        <div class="panel">
+        <p>{{ content }}</p>
+        </div>
       </li>
     {% endfor %}
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+    }
+  }
+  </script>
   </ul>
+
+  
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
