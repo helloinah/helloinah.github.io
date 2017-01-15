@@ -6,16 +6,17 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
   <link rel="stylesheet" href="{{ "/css/unslider.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/unslider-dots.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/fullPage.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/small.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   
   	<script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
-	<script src="{{ "/js/zepto.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/multilingual.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/unslider.js" | prepend: site.baseurl }}"></script>

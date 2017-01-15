@@ -1,4 +1,9 @@
+---
+layout: default
+---
+<script>var x = 0;</script>
 <div id="fullpage">
+	
 		<div class="section">
 				<div class="title" style="background:#{{ page.bg-color-1 }}">
 					<p class="date-category">
@@ -8,6 +13,7 @@
 					<div class="description">{{ page.description }}
 						<p class="date-category">{{ page.size }} . <a href="{{ page.site_url }} ?>" target="blank">{{ page.site }}</a></p></div>
 		</div>
+						
 		<div class="content" style="background:#{{ page.bg-color-2 }}">
 		<div class="my-slider">
 			<ul>
@@ -37,4 +43,20 @@
 			{% endif %}
 				</ul>
 		</div>
+					
 </div>
+					
+<!--
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+--!>

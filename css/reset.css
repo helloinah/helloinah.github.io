@@ -1,0 +1,104 @@
+/**
+ *   Anchor, default reset
+ */
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	/* Don't count padding and borders towards widths */ 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	word-break:keep-all;
+}
+
+/**
+ *   Typographic reset
+ */
+
+@font-face {
+	font-family: 'Han-che';
+	src: url('TSThgrgl.eot');
+	src: url('TSThgrgl.eot?#iefix') format('embedded-opentype'),
+		url('TSThgrgl.woff') format('woff'),
+		url('TSThgrgl.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'bareun';
+    src: url('bareunbatangotfl-webfont.woff2') format('woff2'),
+         url('bareunbatangotfl-webfont.woff') format('woff'),
+	     src: url('BareunBatangPro1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	/* Use a serif font for nice readability, but not Times */
+	font: 1rem 'ff-meta-serif-web-pro', serif;
+	word-break:keep-all;
+	
+}
+
+.ml-ko {
+  font-family: 'Han-che', serif;
+  letter-spacing: 0em;
+  position:relative;
+  top: 0em;
+}
+
+p {
+}
+
+pre {
+
+}
+
+img {
+	max-width: 100vw;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+	a img {
+		border: none;
+	}
+
+/**
+ *   Layout reset
+ */
+.wrap {
+	min-width: 100vw;
+	max-width: 100vw;
+	width: 100vw;
+	min-height:100vh;
+	max-height:100vh;
+	height:100vh;
+	left:0;
+	top:0;
+	margin: 0 0;	
+	position:relative;
+}
+
+/**
+ *   Default colours
+ */
+
+/**
+ *   Transitions and animations
+ */
+a, a img {
+	-webkit-transition: opacity .2s, color .2s;
+	-moz-transition: opacity .2s, color .2s;
+	transition: opacity .2s, color .2s;
+}

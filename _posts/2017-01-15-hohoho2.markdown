@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "후후후 작업 2"
+date:   2015-01-30 18:04:37 +0900
+categories: work
+description: 내가 한 작업입니다. 최고최고
+bg-color-1:	444
+bg-color-2: ddd
+txt: 안녕
+img1: /img/duck.jpg
+img2: /img/duck.jpg
+img3: /img/duck.jpg
+---
+
