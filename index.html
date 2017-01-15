@@ -2,5 +2,54 @@
 layout: default
 ---
     {% for post in site.posts %}
-	    {% include post.html %}
+	   <div id="fullpage">
+	   		<div class="section">
+	   			<div class="title" style="background:#{{ post.bg-color-1 }}">
+	   					<p class="date-category">{{ post.date | date: "%Y.%m" }} — <a href="">{{ post.categories }}</a></p>
+	   					<p class="title-t">{{ post.title }}</p>
+	   					<div class="description">
+	   						{% if post.description %}
+	   						{{ post.description }}
+	   						{% endif %}
+	   						{% if post.size %}
+	   						<p class="date-category">{{ post.size }}
+	   						{% endif %} . 
+	   						{% if post.site_url %}
+	   						<a href="{{ post.site_url }} ?>" target="blank">
+	   							{{ post.site }}</a></p>
+	   						{% endif %}
+	   					</div>
+	   				</div>
+	   		</div>
+	   		<div class="content" style="background:#{{ post.bg-color-2 }}">
+	   			<div class="my-slider">
+	   				<ul>
+	   					{% if post.img1 %}
+	   					<li><div class="img" style="background-image: url('{{ post.img1 | prepend: site.baseurl }}');"> </div></li>
+	   					{% endif %}
+						
+	   					{% if post.img2 %}
+	   					<li><div class="img" style="background-image: url('{{ post.img2 | prepend: site.baseurl }}');"> </div></li>
+	   					{% endif %}
+						
+	   					{% if post.img3 %}
+	   					<li><div class="img" style="background-image: url('{{ post.img3 | prepend: site.baseurl }}');"> </div></li>
+	   					{% endif %}
+						
+	   					{% if post.img4 %}
+	   					<li><div class="img" style="background-image: url('{{ post.img4 | prepend: site.baseurl }}');"> </div></li>
+	   					{% endif %}
+						
+	   					{% if post.img5 %}
+	   					<li><div class="img" style="background-image: url('{{ post.img4 | prepend: site.baseurl }}');"></div></li>
+	   					{% endif %}
+						
+	   					{% if post.txt %}<li><div class="txt">
+	   							<p>{{ post.txt }}</p>
+	   						</div></li>
+	   						{% endif %}
+	   				</ul>
+	   			</div>
+	   		</div>
+	   </div>
     {% endfor %}

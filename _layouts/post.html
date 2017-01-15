@@ -1,40 +1,50 @@
 <div id="fullpage">
 		<div class="section">
-				<div class="title" style="background:#{{ page.bg-color-1 }}">
-					<p class="date-category">
-					{{ page.date | date: "%Y.%m" }}
-					— <a href="">{{ page.categories }}</a></p>
+			<div class="title" style="background:#{{ page.bg-color-1 }}">
+					<p class="date-category">{{ page.date | date: "%Y.%m" }} — <a href="">{{ page.categories }}</a></p>
 					<p class="title-t">{{ page.title }}</p>
-					<div class="description">{{ page.description }}
-						<p class="date-category">{{ page.size }} . <a href="{{ page.site_url }} ?>" target="blank">{{ page.site }}</a></p></div>
+					<div class="description">
+						{% if page.description %}
+						{{ page.description }}
+						{% endif %}
+						{% if page.size %}
+						<p class="date-category">{{ page.size }}
+						{% endif %} . 
+						{% if page.site_url %}
+						<a href="{{ page.site_url }} ?>" target="blank">
+							{{ page.site }}</a></p>
+						{% endif %}
+					</div>
+				</div>
 		</div>
 		<div class="content" style="background:#{{ page.bg-color-2 }}">
-		<div class="my-slider">
-			<ul>
-			{% if page.img1 %}
-			<li><div class="img" style="background-image: url('{{ page.img1 | prepend: site.baseurl }}');"> </div></li>
-			{% endif %}
+			<div class="my-slider">
+				<ul>
+					{% if page.img1 %}
+					<li><div class="img" style="background-image: url('{{ page.img1 | prepend: site.baseurl }}');"> </div></li>
+					{% endif %}
 						
-			{% if page.img2 %}
-			<li><div class="img" style="background-image: url('{{ page.img2 | prepend: site.baseurl }}');"> </div></li>
-			{% endif %}
+					{% if page.img2 %}
+					<li><div class="img" style="background-image: url('{{ page.img2 | prepend: site.baseurl }}');"> </div></li>
+					{% endif %}
 						
-			{% if page.img3 %}
-			<li><div class="img" style="background-image: url('{{ page.img3 | prepend: site.baseurl }}');"> </div></li>
-			{% endif %}
+					{% if page.img3 %}
+					<li><div class="img" style="background-image: url('{{ page.img3 | prepend: site.baseurl }}');"> </div></li>
+					{% endif %}
 						
-			{% if page.img4 %}
-			<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"> </div></li>
-			{% endif %}
+					{% if page.img4 %}
+					<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"> </div></li>
+					{% endif %}
 						
-			{% if page.img5 %}
-			<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"></div></li>
-			{% endif %}
+					{% if page.img5 %}
+					<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"></div></li>
+					{% endif %}
 						
-			{% if page.txt %}<li><div class="txt">
+					{% if page.txt %}<li><div class="txt">
 							<p>{{ page.txt }}</p>
 						</div></li>
-			{% endif %}
+						{% endif %}
 				</ul>
+			</div>
 		</div>
 </div>
