@@ -3,19 +3,7 @@
 			<div class="title" style="background:#{{ page.bg-color-1 }}">
 					<p class="date-category">{{ page.date | date: "%Y.%m" }} — <a href="">{{ page.categories }}</a></p>
 					<p class="title-t">{{ page.title }}</p>
-					<div class="description">
-						{% if page.description %}
-						{{ page.description }}
-						{% endif %}
-						{% if page.size %}
-						<p class="date-category">{{ page.size }}
-						{% endif %} . 
-						{% if page.site_url %}
-						<a href="{{ page.site_url }} ?>" target="blank">
-							{{ page.site }}</a></p>
-						{% endif %}
-					</div>
-				</div>
+			</div>
 		</div>
 		<div class="content" style="background:#{{ page.bg-color-2 }}">
 			<div class="my-slider">

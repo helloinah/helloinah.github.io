@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "프로젝트 그대로"
+date:   2014-12-30
+categories: work
+sub-cat: self-initiated
+bg-color-1:	fff
+bg-color-2: ddd
+img1: /img/duck.jpg
+img2: /img/duck.jpg
+img3: /img/duck.jpg
+---

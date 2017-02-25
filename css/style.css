@@ -1,90 +1,32 @@
-/* Important styles */
-#toggle {
-  display: block;
-  width: 28px;
-  height: 30px;
-  margin: 30px auto 10px;
-  position:fixed;
-  right:2.5vw;
-  top:calc(2.5vw-9px);
-  z-index:1000;
+#top{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    left:0;
+    top:0;
+    padding: 2.5vw 5vw;
+    z-index: 100;
 }
 
-#toggle span:after,
-#toggle span:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -9px;
-}
-#toggle span:after{
-  top: 9px;
-}
-#toggle span {
-  position: relative;
-  display: block;
-}
-
-#toggle span,
-#toggle span:after,
-#toggle span:before {
-  width: 100%;
-  height: 5px;
-  background-color: #888;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  border-radius: 2px;
-}
-
-/* on activation */
-#toggle.on span {
-  background-color: transparent;
-}
-#toggle.on span:before {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-#toggle.on span:after {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-#toggle.on + #menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* menu appearance*/
-#menu {
-  position: fixed;
-  color: #999;
-  width: 100vw;
-  height:100vh;
-  background-color: #fff;
-background-repeat: no-repeat;
-background-position: center center;
-  z-index:999;
-  /* just for this demo */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .4s;
-}
-
-#menu p{
+#top p{
 	font-size:1rem;
-	line-height:1rem;
+	line-height:1.25rem;
 	text-align:left;
-	padding:2.5vw;
-	color:#000;
+    color: #000;
 }
 
-#menu p .ml-ko{
+#top p a{
+    font-size:0.975rem;
+}
+
+#top p a:hover{
+    color:#000;
+}
+
+#top p .ml-ko{
 	font-size:0.9rem;
-	
+    line-height: 1.5rem;
 }
-
-#menu a{
-	border-bottom: 1px solid #000;
-	padding-bottom:0.05rem;
-}
-
 
 /**
  *   Give some extra space to single-page wrappers
@@ -92,106 +34,84 @@ background-position: center center;
 	
 		
 	.title{
-		max-width:50vw;
-		min-width:50vw;
 		width:50vw;
-		position:relative;
+		position:absolute;
+        top:0;
 		text-align:center;
 		vertical-align:middle;
-		min-height:100vh !important;
-		max-height:100vh;
-		height:100vh;
-		float:left;
-		background:#fff;
+		height:auto;
+        z-index: 100;
+        padding: 0.5vw 5vw;
 		}
-		
-		.title p{
-			text-align: center;
-		}
-		
+				
 		.title .title-t{
-			text-align:center;
 			font-size: 2rem !important;
-			line-height: 2.75rem;
+			line-height: 2.5rem;
 			position: relative;
-			padding: 2.5vw 12.5vw;
 		}
 		.title .title-t .ml-ko{
-			text-align:center;
-			font-size: 1.8rem !important;
+            font-size:1.8rem;
 			letter-spacing: -0.5px;
 		}
-		.title .date-category{
-			text-align:center;
+		.date-category{
 			font-size:0.75rem;
-			display:block;
-			position:relative;
-			top:1rem;
-			
+            line-height: 1.5rem;
 		}
-		.title .date-category .ml-ko{
-			font-size:0.71rem;
+
+		.title .collab{
+			font-size:0.75rem;
+            line-height: 1.5rem;
 		}
 		
-		.title .date-category a{
+        .title .collab .ml-ko{
+			font-size:0.7rem;
+            letter-spacing: -0.5px;
+		}
+		
+		.title .collab a{
 			border-bottom:1px solid #000;
 			padding-bottom:1px;
 		}
-		
-		.description {
-			display:block;
-			position: absolute;
-			bottom:0;
-			text-align:left;
-			padding:1vw 7.5vw;
-			width:50vw;
-			height:50vh;
-			border-top: 1px solid #000;
-		}
-		.description p{
-			font-size:0.9rem;
-			text-align:left !important;
-			line-height:1.375rem;
-		}
-		
-		.description p .ml-ko{
-			font-size:0.83rem;
-		}
 
-	
 	.content {
-	max-width:50vw;
-	min-width:50vw;
-	width:50vw;
-	position:relative;
-	min-height:100vh !important;
-	max-height:100vh;
-	height:100vh;
-	float:left;
-	overflow:hidden;
+       min-width:50vw;
+	   width:50vw;
+	   position:relative;
+	   min-height:100vh !important;
+	   max-height:100vh;
+	   height:100vh;
+	   float:left;
+	   overflow:hidden;
 	}
 	
 	.content .txt{
-		max-width:50vw;
-		min-width:50vw;
 		width:50vw;
-		min-height:100vh;
-		max-height:100vh;
-		height:100vh  !important;
+        padding: 0 5vw;
+		min-height:85vh;
+		max-height:85vh;
+		height:85vh  !important;
 		overflow-y:scroll;
+        margin-top:15vh;
+        z-index: 10000;
+        text-align: left !important;
+        direction: rtl !important; 
+
+
 	}
-	.content .txt p{
-		padding:3.65vw 7.5vw;
-		line-height:1.5rem;
-		font-size:1rem;
-	}
-	
-	.content .txt p .ml-ko{
-		font-size:0.91rem;
-	}
+
+    .content .txt .title-t{
+			text-align:left;
+			font-size: 2rem !important;
+			line-height: 2.75rem;
+			position: relative;
+		}
+		.content .txt .title-t .ml-ko{
+			text-align:left;
+			font-size: 1.8rem !important;
+			letter-spacing: -0.5px;
+		}
 	
 		.content .img {
-			max-width:50vw;
 			min-width:50vw;
 			width:50vw;
 			min-height:100vh !important;
@@ -199,10 +119,48 @@ background-position: center center;
 			height:100vh;
 			background-repeat: no-repeat;
 			background-position: center center;
-			 background-size: cover;
+			background-size: cover;
 			display:inline-block;
 			float:left;
 		}
+
+#top_journal_wrapper{
+    width:50vw !important; 
+    height:100vh; 
+    overflow:scroll; 
+    background-color:#eee;
+    direction: rtl !important; 
+    z-index: 1000;
+}
+
+#journal_wrapper{
+    overflow: scroll;
+    height: 100vh;
+    min-height:100vh !important;
+	max-height:100vh;
+}
+
+.journal {
+    position:relative;
+    width:50vw;
+    height:auto;
+    padding:1vw 5vw;
+    border-top: 1px solid #000;
+    color:#000;
+    text-align: left;
+}
+
+.journal img{
+    width:40vw;
+    height:auto;
+    margin: 1vw 0;
+}
+
+.journal a, .journal a .ml-ko{
+    font-size: 0.75rem !important;
+}
+
+
 
 
 /**
@@ -220,8 +178,8 @@ background-position: center center;
 }
 
 	
-		#bottom:hover {
-		}
+#bottom:hover {
+}
 
 
 		@media screen and (orientation:portrait){
@@ -233,21 +191,26 @@ background-position: center center;
 				position:relative;
 				text-align:center;
 				vertical-align:middle;
-				min-height:50vh !important;
-				max-height:50vh;
-				height:50vh;
+				min-height:25vh !important;
+				max-height:25vh;
+				height:25vh;
 				float:left;
 				background:#fff;
 				}
+            
+            .title p{
+                float: none;
+                text-align: left;
+            }
 		
 				.content {
 				max-width:100vw;
 				min-width:100vw;
 				width:100vw;
 				position:relative;
-				min-height:50vh !important;
-				max-height:50vh;
-				height:50vh;
+				min-height:75vh !important;
+				max-height:75vh;
+				height:75vh;
 				float:left;
 				overflow:hidden;
 				}
@@ -256,18 +219,18 @@ background-position: center center;
 					max-width:100vw;
 					min-width:100vw;
 					width:100vw;
-					min-height:50vh !important;
-					max-height:50vh;
-					height:50vh;
+					min-height:75vh !important;
+					max-height:75vh;
+					height:75vh;
 				}
 		
 				.content .img {
 					max-width:100vw;
 					min-width:100vw;
 					width:100vw;
-					min-height:50vh !important;
-					max-height:50vh;
-					height:50vh;
+					min-height:75vh !important;
+					max-height:75vh;
+					height:75vh;
 					background-repeat: no-repeat;
 					background-position: center center;
 					 background-size: cover;
@@ -275,13 +238,6 @@ background-position: center center;
 					float:left;
 				}
 				
-				.description {
-					max-width:100vw;
-					min-width:100vw;
-					width:100vw;
-					min-height:25vh !important;
-					max-height:25vh;
-					height:25vh;
-				}
+
 		
 			}

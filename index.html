@@ -1,47 +1,21 @@
 ---
 layout: default
 ---
-<script>var x = 0;</script>
-	   <div id="fullpage">
+<div id="fullpage" style="width:50vw !important; overflow:hidden; float:right;">
 
     {% for post in site.posts %}
+      {% if post.categories contains 'work' %}
+
 
 	   		<div class="section">
-				
-				<script>
-						if (x == 0) {							
-							$('#t{{ post.id }}').css('float', 'right');
-							$('#c{{ post.id }}').css('float', 'right');
-							x = 1;
-						} else if (x == 1) {
-							$('#t{{ post.id }}').css('float', 'left');
-							$('#c{{ post.id }}').css('float', 'left');
-				    		x = 0;
-							alert(x);
-							
-						}
-				</script>
 					
-					
-	   			<div class="title" id="t{{ post.id }}" style="background:#{{ post.bg-color-1 }}">
-	   			<p class="date-category">{{ post.date | date: "%Y.%m" }} — <a href="">{{ post.categories }}</a></p>
-	   			<p class="title-t">{{ post.title }}</p>
-	   			<div class="description">
-	   				{% if post.description %}
-	   					{{ post.description }}
-	   				{% endif %}
-	   				<p class="date-category">
-							{% if post.size %}
-							{{ post.size }}
-	   						{% endif %} . 
-	   						{% if post.site_url %}
-	   						<a href="{{ post.site_url }} ?>" target="blank">
-	   							{{ post.site }}</a></p>
-	   						{% endif %}
-	   			</div>
+	   			<div class="title" id="t{{ post.bg-color-1 }}" style="border-top:0.5vw solid #{{ post.bg-color-1 }};">
+	   			<p class="date-category" style="color:#{{ post.bg-color-1 }};">{{ post.date | date: "%Y.%m" }}—{{ post.sub-cat }}</p>
+                    <p class="title-t" style="color:#{{ post.bg-color-1 }};">{{ post.title }}</p>
+                <p class="collab" style="color:#{{ post.bg-color-1 }};">{{ post.collab }}</p>
 	   			</div>
 	   		
-	   		<div class="content" id="c{{ post.id }}" style="background:#{{ post.bg-color-2 }}">
+	   		<div class="content" id="c{{ post.bg-color-1 }}" style="background:#{{ post.bg-color-2 }}">
 	   			<div class="my-slider">
 	   				<ul>
 	   					{% if post.img1 %}
@@ -64,12 +38,41 @@ layout: default
 	   					<li><div class="img" style="background-image: url('{{ post.img4 | prepend: site.baseurl }}');"></div></li>
 	   					{% endif %}
 						
-	   					{% if post.txt %}<li><div class="txt">
-	   							<p>{{ post.txt }}</p>
+	   					{% if post.content %}<li><div class="txt">
+	   							<div><p>{{ post.content }}</p></div>
 	   						</div></li>
 	   						{% endif %}
 	   				</ul>
 	   		</div>
 		</div></div>
+        {% endif %}
+
     {% endfor %}
-	   </div>
+</div>
+
+
+<div id="top_journal_wrapper">
+   <div id="top"> 
+    <p>In-ah Shin
+        <br>Graphic designer, keen observer.
+        <br>Working and trying in Seoul, South Korea.</p>
+    <p><Br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
+       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://facebook.com/sceneryoftoday" target="_blank">facebook</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
+    </p>
+    </div> 
+    <div id="#journal_wrapper">
+{% for post in site.posts %}
+    {% if post.categories contains 'journal' %}
+	
+        <div class="journal">
+            <p><span class="date-category" style="position:relative; top:-3px; margin-right:1vw;">{{ post.date | date: "%Y.%m.%d" }}</span> {{ post.title }}</p>
+            {% if post.img %}
+            <a href="{{ post.link }}" target="_blank"><img src="{{ post.img | prepend: site.baseurl }}"></a>
+            {% endif %}
+            <p class="left">{{ post.content }}</p>
+
+        </div>
+        
+    {% endif %}
+{% endfor %}
+        </div>

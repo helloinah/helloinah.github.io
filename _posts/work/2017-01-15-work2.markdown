@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "미트쉐어 2016 기록집"
+date: 2017-01-30
+categories: work
+sub-cat: client project
+bg-color-1: ffdb00
+bg-color-2: ffdb00
+img2: /img/duck.jpg
+img3: /img/duck.jpg
+collab: client.서울NPO지원센터 / editor.이혜민
+---

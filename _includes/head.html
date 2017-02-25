@@ -17,39 +17,29 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   
   	<script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+  
+	
+	
 	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/multilingual.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/unslider.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/fullPage.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/toggle.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/bg.js" | prepend: site.baseurl }}"></script>
-	
+    <script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
+
 	<script src="https://use.typekit.net/ykz4dyv.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	
 	<script>
     $(document).ready(function(e){
-      $("*").multilingual([
-        "ko"
-      ]);
-    });
+      	$("*").multilingual(["ko"]);
+    	$('#fullpage').fullpage({keyboardScrolling: true});
+		$('.my-slider').unslider({ 
+			infinite: false, fluid: true, dots: false
+		});		
+	});	
   </script>
-	
-	<script>
-	$(document).ready(function() {
-	    $('#fullpage').fullpage({
-    		keyboardScrolling: true,		    	
-	    });
-		
-		
-	});
-  </script>
-	<script>
-			jQuery(document).ready(function($) {
-				$('.my-slider').unslider({
-					infinite: true
-				});
-				});
-		</script>
   
 </head>
