@@ -1,38 +1,13 @@
-<div id="fullpage">
-		<div class="section">
-			<div class="title" style="background:#{{ page.bg-color-1 }}">
-					<p class="date-category">{{ page.date | date: "%Y.%m" }} — <a href="">{{ page.categories }}</a></p>
-					<p class="title-t">{{ page.title }}</p>
-			</div>
-		</div>
-		<div class="content" style="background:#{{ page.bg-color-2 }}">
-			<div class="my-slider">
-				<ul>
-					{% if page.img1 %}
-					<li><div class="img" style="background-image: url('{{ page.img1 | prepend: site.baseurl }}');"> </div></li>
-					{% endif %}
-						
-					{% if page.img2 %}
-					<li><div class="img" style="background-image: url('{{ page.img2 | prepend: site.baseurl }}');"> </div></li>
-					{% endif %}
-						
-					{% if page.img3 %}
-					<li><div class="img" style="background-image: url('{{ page.img3 | prepend: site.baseurl }}');"> </div></li>
-					{% endif %}
-						
-					{% if page.img4 %}
-					<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"> </div></li>
-					{% endif %}
-						
-					{% if page.img5 %}
-					<li><div class="img" style="background-image: url('{{ page.img4 | prepend: site.baseurl }}');"></div></li>
-					{% endif %}
-						
-					{% if page.txt %}<li><div class="txt">
-							<p>{{ page.txt }}</p>
-						</div></li>
-						{% endif %}
-				</ul>
-			</div>
-		</div>
-</div>
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+      
+    {{ page.title }}
+    {{ page.content }}
+    
+  </body>
+
+</html>

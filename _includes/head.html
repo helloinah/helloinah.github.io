@@ -1,13 +1,22 @@
 <head>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'ykz4dyv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+    
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
   <link rel="stylesheet" href="{{ "/css/unslider.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/unslider-dots.css" | prepend: site.baseurl }}">
@@ -15,31 +24,28 @@
   <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/small.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-  
-  	<script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+    
+    <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
-  
-	
-	
-	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/multilingual.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/unslider.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/multilingual.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/unslider.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/js/fullPage.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
-
-	<script src="https://use.typekit.net/ykz4dyv.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	
-	<script>
+    <script>
     $(document).ready(function(e){
       	$("*").multilingual(["ko"]);
     	$('#fullpage').fullpage({keyboardScrolling: true});
 		$('.my-slider').unslider({ 
 			infinite: false, fluid: true, dots: false
-		});		
-	});	
+		});	
+
+    
+        
+    });	
+        
   </script>
   
 </head>

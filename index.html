@@ -1,7 +1,35 @@
 ---
 layout: default
 ---
-<div id="fullpage" style="width:50vw !important; overflow:hidden; float:right;">
+<div id="wrapper">
+    
+    <div id="top_journal_wrapper" style="float:left !important;">
+    <div id="top"> 
+    <p>In-ah Shin
+        <br>Graphic designer, keen observer.
+        <br>Working and trying in Seoul, South Korea.</p>
+       <p><br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
+       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://facebook.com/sceneryoftoday" target="_blank">facebook</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
+    </p>
+    </div> 
+    <div id="#journal_wrapper">
+{% for post in site.posts %}
+    {% if post.categories contains 'journal' %}
+        <div class="journal">
+            <p><span class="date-category" style="position:relative; top:-3px; margin-right:1vw;">{{ post.date | date: "%Y.%m.%d" }}</span> {{ post.title }}</p>
+            {% if post.img %}
+            <a href="{{ post.link }}" target="_blank"><img src="{{ post.img | prepend: site.baseurl }}"></a>
+            {% endif %}
+            <div class="left">{{ post.content }}</div>
+
+        </div>
+     {% endif %}
+{% endfor %}
+        </div>
+</div>
+    
+    <div id="handler" style="width:50vw !important; min-width:50vw !important; overflow:hidden !important; position: fixed !important; top:0 !important; right:0 !important;">
+    <div id="fullpage" style="width:100% !important;">
 
     {% for post in site.posts %}
       {% if post.categories contains 'work' %}
@@ -9,11 +37,12 @@ layout: default
 
 	   		<div class="section">
 					
-	   			<div class="title" id="t{{ post.bg-color-1 }}" style="border-top:0.5vw solid #{{ post.bg-color-1 }};">
+	   			<div class="title" id="t{{ post.bg-color-1 }}">
 	   			<p class="date-category" style="color:#{{ post.bg-color-1 }};">{{ post.date | date: "%Y.%m" }}—{{ post.sub-cat }}</p>
                     <p class="title-t" style="color:#{{ post.bg-color-1 }};">{{ post.title }}</p>
-                <p class="collab" style="color:#{{ post.bg-color-1 }};">{{ post.collab }}</p>
 	   			</div>
+                <div class="collab">
+                 <p style="color:#{{ post.bg-color-1 }};">{{ post.collab }}</p></div>
 	   		
 	   		<div class="content" id="c{{ post.bg-color-1 }}" style="background:#{{ post.bg-color-2 }}">
 	   			<div class="my-slider">
@@ -35,10 +64,10 @@ layout: default
 	   					{% endif %}
 						
 	   					{% if post.img5 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img4 | prepend: site.baseurl }}');"></div></li>
+	   					<li><div class="img" style="background-image: url('{{ post.img5 | prepend: site.baseurl }}');"></div></li>
 	   					{% endif %}
 						
-	   					{% if post.content %}<li><div class="txt">
+	   					{% if post.txt %}<li><div class="txt">
 	   							<div><p>{{ post.content }}</p></div>
 	   						</div></li>
 	   						{% endif %}
@@ -48,31 +77,7 @@ layout: default
         {% endif %}
 
     {% endfor %}
-</div>
 
-
-<div id="top_journal_wrapper">
-   <div id="top"> 
-    <p>In-ah Shin
-        <br>Graphic designer, keen observer.
-        <br>Working and trying in Seoul, South Korea.</p>
-    <p><Br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
-       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://facebook.com/sceneryoftoday" target="_blank">facebook</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
-    </p>
-    </div> 
-    <div id="#journal_wrapper">
-{% for post in site.posts %}
-    {% if post.categories contains 'journal' %}
-	
-        <div class="journal">
-            <p><span class="date-category" style="position:relative; top:-3px; margin-right:1vw;">{{ post.date | date: "%Y.%m.%d" }}</span> {{ post.title }}</p>
-            {% if post.img %}
-            <a href="{{ post.link }}" target="_blank"><img src="{{ post.img | prepend: site.baseurl }}"></a>
-            {% endif %}
-            <p class="left">{{ post.content }}</p>
-
-        </div>
+        </div></div>
         
-    {% endif %}
-{% endfor %}
-        </div>
+</div>
