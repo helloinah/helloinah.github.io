@@ -25,6 +25,16 @@
     color:#000;
 }
 
+video { display: block; }
+
+#bgvid { 
+    min-width: 100%;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+}
+
 /**
  *   Give some extra space to single-page wrappers
  */
@@ -63,12 +73,12 @@
             width:100%;
             text-align: left;
             padding: 1vw 5vw;
+            line-height: 1.5rem;
 		}
-        .collab p { display: inline-block; float: left; margin-left: 0.5vw;}
+        .collab p {font-size:0.75rem !important; display: inline-block; float: left; margin-left: 0.5vw;}
         .collab a { 
             color: inherit !important;
-            font-size:0.75rem !important;
-            line-height: 1.5rem;}
+            font-size:0.75rem !important;}
         .collab .ml-ko{
 			font-size:0.7rem;
             letter-spacing: -0.5px;
