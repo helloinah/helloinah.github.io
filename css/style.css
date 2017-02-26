@@ -1,4 +1,10 @@
-#handler {width:50vw !important; min-width:50vw !important; overflow:hidden !important; position: fixed !important; top:0 !important; right:0 !important;}
+#handler {
+    width:50vw !important; 
+    min-width:50vw !important; 
+    overflow:hidden !important; 
+    position: fixed !important; 
+    top:0 !important; 
+    right:0 !important;}
 
 #top{
     width: 100%;
@@ -167,7 +173,9 @@ video { display: block; }
 .journal img{
     width:100%;
     height:auto;
-    margin: 1vw 0;
+    display: block;
+    padding: 1vw 0;
+
 }
 
 .journal a, .journal a .ml-ko{
