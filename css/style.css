@@ -1,3 +1,5 @@
+#handler {width:50vw !important; min-width:50vw !important; overflow:hidden !important; position: fixed !important; top:0 !important; right:0 !important;}
+
 #top{
     width: 100%;
     height: 30vh;
@@ -23,11 +25,6 @@
     color:#000;
 }
 
-#top p .ml-ko{
-	font-size:0.9rem;
-    line-height: 1.5rem;
-}
-
 /**
  *   Give some extra space to single-page wrappers
  */
@@ -36,26 +33,27 @@
 	.title{
 		width:100%;
 		position:absolute;
-        top:1vw;
+        top: calc(2.5vw - 0.1875rem);
 		text-align:center;
 		vertical-align:middle;
 		height:auto;
         z-index: 100;
-        padding: 1vw 5vw;
+        padding: 0 5vw;
 		}
 				
 		.title .title-t{
 			font-size: 2rem !important;
-			line-height: 2.5rem;
+			line-height: 2.6rem;
 			position: relative;
 		}
 		.title .title-t .ml-ko{
-            font-size:1.8rem;
+            font-size:1.9rem;
 			letter-spacing: -0.5px;
 		}
 		.title .date-category{
 			font-size:0.75rem;
             line-height: 1.5rem;
+            margin-bottom: 0.1875rem;
 		}
 
 		.collab{
@@ -66,10 +64,11 @@
             text-align: left;
             padding: 1vw 5vw;
 		}
-.collab p{
-    font-size:0.75rem;
-            line-height: 1.5rem;
-}
+        .collab p { display: inline-block; float: left; margin-left: 0.5vw;}
+        .collab a { 
+            color: inherit !important;
+            font-size:0.75rem !important;
+            line-height: 1.5rem;}
         .collab .ml-ko{
 			font-size:0.7rem;
             letter-spacing: -0.5px;
@@ -173,66 +172,41 @@
 }
 
 .journal .left p{
-        margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 
 @media screen and (orientation:portrait){
-	  
-			.title{
-				max-width:100vw;
-				min-width:100vw;
-				width:100vw;
-				position:relative;
-				text-align:center;
-				vertical-align:middle;
-				min-height:25vh !important;
-				max-height:25vh;
-				height:25vh;
-				float:left;
-				background:#fff;
-				}
-            
-            .title p{
-                float: none;
-                text-align: left;
-            }
-		
-				.content {
-				max-width:100vw;
-				min-width:100vw;
-				width:100vw;
-				position:relative;
-				min-height:75vh !important;
-				max-height:75vh;
-				height:75vh;
-				float:left;
-				overflow:hidden;
-				}
-		
-				.content .txt{
-					max-width:100vw;
-					min-width:100vw;
-					width:100vw;
-					min-height:75vh !important;
-					max-height:75vh;
-					height:75vh;
-				}
-		
-				.content .img {
-					max-width:100vw;
-					min-width:100vw;
-					width:100vw;
-					min-height:75vh !important;
-					max-height:75vh;
-					height:75vh;
-					background-repeat: no-repeat;
-					background-position: center center;
-					 background-size: cover;
-					display:inline-block;
-					float:left;
-				}
-				
+    body{
+        overflow: auto !important;
+        height:auto;
+    }
+    
+    #wrapper{
+        overflow: auto;
+        height: auto;
+    }
+    #top_journal_wrapper{
+        width:100vw !important; 
+        height:auto; 
+        overflow:scroll;
+        position: relative;
+        display: inline-block;
+    }
+    
+    #handler{
+        width:100vw !important;
+        height: 100vh;
+        position: relative !important;
+        display: inline-block;
+    }
+    
+}
 
+@media screen and (orientation:landscape) and (max-width: 768px){
+    
+    #top{
+        height:50vh;
+    }
 		
-			}
+}

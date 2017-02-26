@@ -9,7 +9,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	word-break:keep-all;
-    font-size:14px;
+    font-size:14.5px;
 }
 
 /**
@@ -37,9 +37,9 @@ body {
 
 .ml-ko {
   font-family: 'Han-che', serif;
-    line-height: 1.5rem;
+    line-height: 1.57rem;
     font-size: 0.9rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
   top: 0em;
 }
 

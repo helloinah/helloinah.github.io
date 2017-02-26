@@ -8,4 +8,5 @@
 .unslider-fade .unslider-wrap li.unslider-active{z-index:10}
 .unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
 .unslider-arrow{position:absolute;z-index:2;cursor:pointer}
-.unslider-arrow.next{position:absolute; height:100vh; top:0 !important; float:right; right:0!important; width:10vw; cursor:pointer;}
+.unslider-arrow.next{position:absolute; height:100vh; top:0 !important; float:right; right:0!important; width:5vw; cursor:pointer;}
+.unslider-arrow.prev{position:absolute; height:100vh; top:0 !important; float:left; left:0!important; width:5vw; cursor:pointer;}

@@ -28,7 +28,7 @@ layout: default
         </div>
 </div>
     
-    <div id="handler" style="width:50vw !important; min-width:50vw !important; overflow:hidden !important; position: fixed !important; top:0 !important; right:0 !important;">
+    <div id="handler">
     <div id="fullpage" style="width:100% !important;">
 
     {% for post in site.posts %}
@@ -41,31 +41,19 @@ layout: default
 	   			<p class="date-category" style="color:#{{ post.bg-color-1 }};">{{ post.date | date: "%Y.%m" }}—{{ post.sub-cat }}</p>
                     <p class="title-t" style="color:#{{ post.bg-color-1 }};">{{ post.title }}</p>
 	   			</div>
-                <div class="collab">
-                 <p style="color:#{{ post.bg-color-1 }};">{{ post.collab }}</p></div>
-	   		
+                <div class="collab" style="color:#{{ post.bg-color-1 }} !important;">
+                    {% for item in post.collab %}
+                        {{ item in post.collab | markdownify }}
+                    {% endfor %} 
+                </div>
+
 	   		<div class="content" id="c{{ post.bg-color-1 }}" style="background:#{{ post.bg-color-2 }}">
 	   			<div class="my-slider">
 	   				<ul>
-	   					{% if post.img1 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img1 | prepend: site.baseurl }}');"> </div></li>
-	   					{% endif %}
-						
-	   					{% if post.img2 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img2 | prepend: site.baseurl }}');"> </div></li>
-	   					{% endif %}
-						
-	   					{% if post.img3 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img3 | prepend: site.baseurl }}');"> </div></li>
-	   					{% endif %}
-						
-	   					{% if post.img4 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img4 | prepend: site.baseurl }}');"> </div></li>
-	   					{% endif %}
-						
-	   					{% if post.img5 %}
-	   					<li><div class="img" style="background-image: url('{{ post.img5 | prepend: site.baseurl }}');"></div></li>
-	   					{% endif %}
+                        {% for item in post.img %}
+                        <li><div class="img" style="background-image: url('{{ item in post.img | prepend: site.baseurl }}');"> </div></li>
+                        {% endfor %}
+                        
 						
 	   					{% if post.txt %}<li><div class="txt">
 	   							<div><p>{{ post.content }}</p></div>
