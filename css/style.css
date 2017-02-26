@@ -10,8 +10,6 @@
     left: 0;
     display: none;
     overflow: hidden;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
 }
 
 #m-menu .top, #m-menu .bottom{
@@ -264,7 +262,9 @@ video { display: block; }
     #wrapper{
         overflow: auto;
         height: auto;
+        display: none;
     }
+    
     #top_journal_wrapper{
         width:100vw !important; 
         height:auto; 
@@ -285,7 +285,7 @@ video { display: block; }
     }
 
     #m-menu .top, #m-menu .bottom{
-        display: block;}
+    display: block;}
     
 }
 
