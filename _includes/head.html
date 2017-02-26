@@ -37,13 +37,34 @@
 	
     <script>
     $(document).ready(function(e){
+        $(window).on('orientationchange', function(e) {
+     $.mobile.changePage(window.location.href, {
+        allowSamePageTransition: true,
+        transition: 'none',
+        reloadPage: true
+    });
+});
       	$("body").multilingual(["ko"]);
-    	$('#fullpage').fullpage({keyboardScrolling: true});
+    	$('#fullpage').fullpage({
+            keyboardScrolling: true,
+            normalScrollElements: '#top_journal_wrapper, #journal_wrapper'});
 		$('.my-slider').unslider({ 
 			infinite: true, fluid: true, dots: false
 		});	
-
-    
+        
+        $(".top").click(function(){
+            $("#m-menu, .top, #fullpage, #handler").css("display", "none");
+            $("#m-menu2, #top_journal_wrapper, #top, #journal_wrapper").css("display", "block");
+        });
+        
+        $(".bottom").click(function(){
+                $("#m-menu, .top, #top_journal_wrapper, #top, #journal_wrapper").css("display", "none");
+                $("#m-menu2, #fullpage, #handler").css("display", "block");
+        });
+        $("#m-menu2").click(function(){
+            $("#m-menu, .top, .bottom").css("display", "block");
+            $(this).css("display", "none")
+        });
         
     });	
         

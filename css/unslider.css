@@ -7,6 +7,38 @@
 .unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}
 .unslider-fade .unslider-wrap li.unslider-active{z-index:10}
 .unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
-.unslider-arrow{position:absolute;z-index:2;cursor:pointer}
-.unslider-arrow.next{position:absolute; height:100vh; top:0 !important; float:right; right:0!important; width:5vw; cursor:pointer;}
-.unslider-arrow.prev{position:absolute; height:100vh; top:0 !important; float:left; left:0!important; width:5vw; cursor:pointer;}
+.unslider-arrow{position:absolute;z-index:200;cursor:pointer}
+.unslider-arrow.next{
+    position:absolute; 
+    height: 8px; 
+    width: 8px;
+    background-color: #342dff;
+    top: calc(50vh - 5px) !important; 
+    float: right; 
+    right: calc(2.5vw - 5px) !important;  
+    cursor:pointer;
+    border-radius: 50%;
+}
+.unslider-arrow.prev{
+    position:absolute; 
+    height: 8px; 
+    width: 8px;
+    background-color: #342dff;
+    top: calc(50vh - 5px) !important; 
+    float:left; 
+    left: calc(2.5vw - 5px) !important; 
+    cursor:pointer;
+    border-radius: 50%;
+}
+.unslider-arrow.prev:hover{
+    height: 10px; 
+    width: 10px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.unslider-arrow.next:hover{
+    height: 10px; 
+    width: 10px;
+    margin-right: -1px;
+    margin-top: -1px;
+}

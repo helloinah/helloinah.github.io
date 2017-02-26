@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+    <div id="m-menu">
+        <div class="top"> <p>about / journal</p> </div>
+        <div class="bottom"> <p>portfolio</p> </div>
+    </div>
+
 <div id="wrapper">
     
     <div id="top_journal_wrapper" style="float:left !important;">
@@ -29,7 +34,7 @@ layout: default
 </div>
     
     <div id="handler">
-    <div id="fullpage" style="width:100% !important;">
+    <div id="fullpage" style="width:100% !important; z-index:1 !important;">
 
     {% for post in site.posts %}
       {% if post.categories contains 'work' %}
@@ -76,3 +81,4 @@ layout: default
         </div></div>
         
 </div>
+    
