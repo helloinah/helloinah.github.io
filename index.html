@@ -34,8 +34,11 @@ layout: default
 </div>
     
     <div id="handler">
-    <div id="fullpage" style="width:100% !important; z-index:1 !important;">
+                <div id="down">&nbsp;</div>
+                <div id="up">&nbsp;</div>
 
+    <div id="fullpage" style="width:100% !important; z-index:1 !important;">
+        
     {% for post in site.posts %}
       {% if post.categories contains 'work' %}
 
@@ -43,8 +46,9 @@ layout: default
 	   		<div class="section">
 					
 	   			<div class="title" id="t{{ post.bg-color-1 }}">
-	   			<p class="date-category" style="color:#{{ post.bg-color-1 }};">{{ post.date | date: "%Y.%m" }}—{{ post.sub-cat }}</p>
+	   			     <p class="date-category" style="color:#{{ post.bg-color-1 }};">{{ post.date | date: "%Y.%m" }}—{{ post.sub-cat }}</p>
                     <p class="title-t" style="color:#{{ post.bg-color-1 }};">{{ post.title }}</p>
+                    
 	   			</div>
                 <div class="collab" style="color:#{{ post.bg-color-1 }} !important;">
                     {% for item in post.collab %}
@@ -52,7 +56,8 @@ layout: default
                     {% endfor %} 
                 </div>
 
-	   		<div class="content" id="c{{ post.bg-color-1 }}" style="background:#{{ post.bg-color-2 }}">
+	   		<div class="content" id="c{{ post.bg-color-1 }}" style="background:#{{ post.bg-color-2 }}"> 
+
 	   			<div class="my-slider">
 	   				<ul>
                         {% for item in post.img %}
@@ -71,13 +76,12 @@ layout: default
                             </video>
                             
                         </li>{% endif %}
+
 	   				</ul>
 	   		</div>
 		</div></div>
         {% endif %}
-
     {% endfor %}
-
         </div></div>
         
 </div>

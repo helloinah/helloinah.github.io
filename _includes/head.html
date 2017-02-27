@@ -36,27 +36,30 @@
     <script src="{{ "/js/jquery-ui.js" | prepend: site.baseurl }}"></script>
 	
     <script>
+    $(window).on('orientationchange', function(e) {
+            $.mobile.changePage(window.location.href, {
+                allowSamePageTransition: true,
+                transition: 'none',
+                reloadPage: true
+                });
+            });
     $(document).ready(function(e){
-        $(window).on('orientationchange', function(e) {
-     $.mobile.changePage(window.location.href, {
-        allowSamePageTransition: true,
-        transition: 'none',
-        reloadPage: true
-    });
-});
-      	$("body").multilingual(["ko"]);
+        $("body").multilingual(["ko"]);
     	$('#fullpage').fullpage({
             keyboardScrolling: true,
-            normalScrollElements: '#top_journal_wrapper, #journal_wrapper'});
+            normalScrollElements: '#top_journal_wrapper, #journal_wrapper, #handler',
+            continuousVertical: true});
+        $('#down').click(function(){
+            $.fn.fullpage.moveSectionDown();
+        });
+        
 		$('.my-slider').unslider({ 
 			infinite: true, fluid: true, dots: false
 		});	
-        
         $(".top").click(function(){
             $("#m-menu, .top, #fullpage, #handler").css("display", "none");
             $("#wrapper, #m-menu2, #top_journal_wrapper, #top, #journal_wrapper").css("display", "block");
         });
-        
         $(".bottom").click(function(){
                 $("#m-menu, .top, #top_journal_wrapper, #top, #journal_wrapper").css("display", "none");
                 $("#wrapper, #m-menu2, #fullpage, #handler").css("display", "block");
@@ -65,7 +68,7 @@
             $("#m-menu, .top, .bottom").css("display", "block");
             $(this, '#wrapper').css("display", "none")
         });
-        
+    
     });	
         
   </script>

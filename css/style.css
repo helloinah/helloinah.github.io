@@ -58,7 +58,7 @@
 #handler {
     width:50vw !important; 
     min-width:50vw !important; 
-    overflow:hidden !important; 
+    overflow-y:hidden !important; 
     position: fixed !important; 
     top:0 !important; 
     right:0 !important;
@@ -133,14 +133,19 @@ video { display: block; }
 
 		.collab{
             position:absolute;
-            bottom:0;
+            bottom:0.8vw;
             z-index: 100;
             width:100%;
             text-align: left;
             padding: 1vw 5vw;
+            font-size:0.75rem !important;
+            text-align: left;
+            padding: 1vw 5vw;
             line-height: 1.5rem;
+            
 		}
         .collab p {font-size:0.75rem !important; display: inline-block; float: left; margin-left: 0.5vw;}
+
         .collab a { 
             color: inherit !important;
             font-size:0.75rem !important;}

@@ -106,15 +106,15 @@ html.fp-enabled,
     position: fixed;
     z-index: 100;
     margin-top: -32px;
-    top: 50%;
+    top: 2.5vw;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.right {
-    right: 17px;
+    right: 1vw;
 }
 #fp-nav.left {
-    left: 17px;
+    left: calc(50vw + 1vw);
 }
 .fp-slidesNav{
     position: absolute;
@@ -139,9 +139,9 @@ html.fp-enabled,
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: block;
-    width: 14px;
-    height: 13px;
-    margin: 7px;
+    width: 12px;
+    height: 11px;
+    margin: 5px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -161,9 +161,9 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
-    margin: -6px 0 0 -6px;
+    height: 10px;
+    width: 10px;
+    margin: -5px 0 0 -5px;
     border-radius: 100%;
  }
 #fp-nav ul li a span,

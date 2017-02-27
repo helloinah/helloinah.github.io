@@ -69,8 +69,7 @@
 			//  elements for each arrow like below:
 			arrows: {
 				prev: '<div class="' + self._ + '-arrow prev"> &nbsp;</div>',
-				next: '<div class="' + self._ + '-arrow next"> &nbsp;</div>'
-			},
+				next: '<div class="' + self._ + '-arrow next"> &nbsp;</div>'			},
 
 			//  How should Unslider animate?
 			//  It can do one of the following types:
