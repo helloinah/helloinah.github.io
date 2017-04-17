@@ -16,7 +16,7 @@
     top: 20vh !important; 
     float: right; 
     right: 0 !important;  
-    cursor: url('https://helloinah.github.io/css/next.svg') 32 16, e-resize;
+    cursor: url('../css/next.svg') 32 16, e-resize;
 }
 
 #down{
@@ -26,7 +26,7 @@
     bottom: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('https://helloinah.github.io/css/down.svg') 16 32, s-resize;
+    cursor: url('../css/down.svg') 16 32, s-resize;
     z-index: 10000;
 }
 
@@ -37,6 +37,6 @@
     top: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('https://helloinah.github.io/css/up.svg') 16 32, n-resize;
+    cursor: url('../css/up.svg') 16 32, n-resize;
     z-index: 10000;
 }
