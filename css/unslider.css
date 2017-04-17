@@ -7,79 +7,36 @@
 .unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}
 .unslider-fade .unslider-wrap li.unslider-active{z-index:10}
 .unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
-.unslider-arrow{position:absolute;z-index:200;cursor:pointer}
+.unslider-arrow{position:absolute;z-index:1000;}
+
 .unslider-arrow.next{
     position:absolute; 
-    height: 8px; 
-    width: 8px;
-    background-color: #342dff;
-    top: calc(50vh - 5px) !important; 
+    height: 60vh; 
+    width: 5vw;
+    top: 20vh !important; 
     float: right; 
-    right: calc(2.5vw - 5px) !important;  
-    cursor:pointer;
-    border-radius: 50%;
-}
-.unslider-arrow.prev{
-    position:absolute; 
-    height: 8px; 
-    width: 8px;
-    background-color: #342dff;
-    top: calc(50vh - 5px) !important; 
-    float:left; 
-    left: calc(2.5vw - 5px) !important; 
-    cursor:pointer;
-    border-radius: 50%;
-    display: none;
-}
-.unslider-arrow.prev:hover{
-    height: 12px; 
-    width: 12px;
-    margin-left: -2px;
-    margin-top: -2px;
-}
-.unslider-arrow.next:hover{
-    height: 12px; 
-    width: 12px;
-    margin-right: -2px;
-    margin-top: -2px;
+    right: 0 !important;  
+    cursor: url('next.svg') 32 16, e-resize;
 }
 
 #down{
     position:fixed; 
-    height: 8px; 
-    width: 8px;
-    background-color: #342dff;
-    bottom: 2.5vw !important; 
-    float:left; 
-    right: calc(2.5vw - 5px) !important;  
-    cursor:pointer;
-    border-radius: 50%;
+    height: 10vh; 
+    width: 50%;
+    bottom: 0 !important; 
+    float:right; 
+    right: 0 !important;  
+    cursor: url('down.svg') 16 32, s-resize;
     z-index: 10000;
-}
-
-#down:hover{
-    height: 12px; 
-    width: 12px;
-    margin-right: -2px;
-    margin-bottom: -2px;
 }
 
 #up{
     position:fixed; 
-    height: 8px; 
-    width: 8px;
-    background-color: #342dff;
-    top: 2.5vw !important; 
-    float:left; 
-    right: calc(2.5vw - 5px) !important;  
-    cursor:pointer;
-    border-radius: 50%;
+    height: 10vh; 
+    width: 50%;
+    top: 0 !important; 
+    float:right; 
+    right: 0 !important;  
+    cursor: url('up.svg') 16 32, n-resize;
     z-index: 10000;
-}
-
-#up:hover{
-    height: 12px; 
-    width: 12px;
-    margin-right: -2px;
-    margin-top: -2px;
 }

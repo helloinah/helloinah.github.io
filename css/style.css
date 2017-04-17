@@ -58,7 +58,6 @@
 #handler {
     width:50vw !important; 
     min-width:50vw !important; 
-    overflow-y:hidden !important; 
     position: fixed !important; 
     top:0 !important; 
     right:0 !important;
@@ -162,26 +161,24 @@ video { display: block; }
 	   max-height:100vh;
 	   height:100vh;
 	   float:left;
+        overflow: hidden;
 	}
-	
+ 
 	.content .txt{
-		width:calc(100%-10vw);
-		min-height:85vh;
-		max-height:85vh;
-		height:85vh  !important;
+		width:100%;
+		min-height:70vh;
+		max-height:70vh;
+		height:70vh  !important;
 		overflow-y: auto;
-        margin-top:15vh;
-        margin-left:5vw;
-        margin-right:5vw;
+        margin-top:30vh;
+        padding-left: 6.25vw;
+        padding-right:6.25vw;
+        padding-bottom:10vh;
         text-align: left !important;
-        z-index: 1000;
+        z-index: 20000 !important;}
 
-	}
-
-.content .txt p{
-        margin-bottom: 1rem;
-
-}
+    .content .txt p{
+        margin-bottom: 1rem;}
 
     .content .txt .title-t{
 			text-align:left;
@@ -217,7 +214,7 @@ video { display: block; }
 }
 
 #journal_wrapper{
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
     min-height:100vh !important;
 	max-height:100vh;
