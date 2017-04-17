@@ -47,18 +47,10 @@
     $(document).ready(function(e){
         $("body").multilingual(["ko"]);
     	$('#fullpage').fullpage({
-            autoScrolling: true,
             keyboardScrolling: true,
-            normalScrollElements: '#top_journal_wrapper, #journal_wrapperm, .content, .txt',
+            normalScrollElements: '#top_journal_wrapper, #journal_wrapperm, .txt',
             continuousVertical: true,
-            fixedElements: '#down, #up',
-            fitToSection: false,
-            scrollOverflow: true,
-            scrollOverflowOptions: {
-            click: false,
-            tap: true,
-            interactiveScrollbars: true
-        }});
+            fixedElements: '#down, #up'});
         
         $('#down').click(function(){
             $.fn.fullpage.moveSectionDown();

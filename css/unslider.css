@@ -12,7 +12,7 @@
 .unslider-arrow.next{
     position:absolute; 
     height: 60vh; 
-    width: 5vw;
+    width: 20vw;
     top: 20vh !important; 
     float: right; 
     right: 0 !important;  
@@ -21,7 +21,7 @@
 
 #down{
     position:fixed; 
-    height: 10vh; 
+    height: 25vh; 
     width: 50%;
     bottom: 0 !important; 
     float:right; 
@@ -32,7 +32,7 @@
 
 #up{
     position:fixed; 
-    height: 10vh; 
+    height: 25vh; 
     width: 50%;
     top: 0 !important; 
     float:right; 
