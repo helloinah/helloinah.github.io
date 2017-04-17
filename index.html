@@ -12,9 +12,9 @@ layout: default
     <div id="top"> 
     <p>In-ah Shin
         <br>Graphic designer, keen observer.
-        <br>Working and trying in Seoul, South Korea.</p>
+        <br>Based in Seoul, South Korea.</p>
        <p><br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
-       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://facebook.com/sceneryoftoday" target="_blank">facebook</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
+       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
     </p>
     </div> 
     <div id="#journal_wrapper">
@@ -65,8 +65,8 @@ layout: default
                         {% endfor %}
                         						
 	   					{% if post.txt %}<li><div class="txt">
-	   							<div><p>{{ post.content }}</p></div>
-	   						</div></li>
+	   							{{ post.content }}</div>
+	   						</li>
 	   					{% endif %}
                         
                         {% if post.vid %}

@@ -48,12 +48,25 @@
     $(document).ready(function(e){
         $("body").multilingual(["ko"]);
     	$('#fullpage').fullpage({
+            autoScrolling: true,
             keyboardScrolling: true,
-            normalScrollElements: '#top_journal_wrapper, #journal_wrapper',
-            continuousVertical: true});
+            normalScrollElements: '#top_journal_wrapper, #journal_wrapperm, .content, .txt',
+            continuousVertical: true,
+            fixedElements: '#down, #up',
+            fitToSection: false,
+            scrollOverflow: true,
+            scrollOverflowOptions: {
+            click: false,
+            tap: true,
+            interactiveScrollbars: true
+        }});
         
         $('#down').click(function(){
             $.fn.fullpage.moveSectionDown();
+        });
+        
+        $('#up').click(function(){
+            $.fn.fullpage.moveSectionUp();
         });
         
 		$('.my-slider').unslider({ 
@@ -71,7 +84,7 @@
             $("#m-menu, .top, .bottom").css("display", "block");
             $(this, '#wrapper').css("display", "none")
         });
-    
+        
     });	
         
   </script>
