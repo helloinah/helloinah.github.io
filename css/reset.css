@@ -91,8 +91,6 @@ a, a img {
 }
 
 blockquote {
-  border-left: 1px solid #342dff;
-    padding-left:2.5vw;
-    color: #342dff;
-  quotes: "\201C""\201D""\2018""\2019";
+    padding-left:5vw;
+    quotes: "\201C""\201D""\2018""\2019";
 }
