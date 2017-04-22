@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-    <div id="m-menu">
+<div id="m-menu">
         <div class="top"> <p>about / journal</p> </div>
         <div class="bottom"> <p>portfolio</p> </div>
-    </div>
+</div>
+
 
 <div id="wrapper">
     
     <div id="top_journal_wrapper" style="float:left !important;">
     <div id="top"> 
     <p>In-ah Shin
-        <br>Graphic designer, keen observer.
-        <br>Based in Seoul, South Korea.</p>
+        <br>Graphic designer, keen observer,
+        <br>based in Seoul, South Korea.</p>
        <p><br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
        <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
     </p>
@@ -33,10 +34,9 @@ layout: default
         </div>
 </div>
     
-    <div id="handler">
+<div id="handler">
                 <div id="down">&nbsp;</div>
                 <div id="up">&nbsp;</div>
-
     <div id="fullpage" style="width:100% !important; z-index:1 !important;">
         
     {% for post in site.posts %}
@@ -64,8 +64,11 @@ layout: default
                         <li><div class="img" style="background-image: url('{{ item in post.img | prepend: site.baseurl }}');"> </div></li>
                         {% endfor %}
                         						
-	   					{% if post.txt %}<li><div class="txt">
-	   							{{ post.content }}</div>
+	   					{% if post.txt %}
+                        <li>
+                            <div class="txt">
+	   							{{ post.content }}
+                            </div>
 	   						</li>
 	   					{% endif %}
                         
@@ -82,7 +85,8 @@ layout: default
 		</div></div>
         {% endif %}
     {% endfor %}
-        </div></div>
+        </div>
+        </div>
         
 </div>
     

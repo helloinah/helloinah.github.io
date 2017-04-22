@@ -6,7 +6,7 @@
 .unslider-fade{position:relative}
 .unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}
 .unslider-fade .unslider-wrap li.unslider-active{z-index:10}
-.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
+.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none;}
 .unslider-arrow{position:absolute;z-index:1000;}
 
 .unslider-arrow.next{
@@ -16,7 +16,7 @@
     top: 20vh !important; 
     float: right; 
     right: 0 !important;  
-    cursor: url('../css/next.svg') 32 16, e-resize;
+    cursor: url('../css/next.png'), e-resize;
 }
 
 #down{
@@ -26,7 +26,7 @@
     bottom: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/down.svg') 16 32, s-resize;
+    cursor: url('../css/down.png'), s-resize;
     z-index: 10000;
 }
 
@@ -37,6 +37,16 @@
     top: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/up.svg') 16 32, n-resize;
+    cursor: url('../css/up.png'), n-resize;
     z-index: 10000;
+}
+
+.unslider-arrow.prev{
+    position:absolute; 
+    height: 60vh; 
+    width: 20vw;
+    top: 20vh !important; 
+    float: left; 
+    left: 0 !important;  
+    cursor: url('../css/next.png'), w-resize;
 }

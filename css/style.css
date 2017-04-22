@@ -166,16 +166,18 @@ video { display: block; }
  
 	.content .txt{
 		width:100%;
-		min-height:70vh;
-		max-height:70vh;
-		height:70vh  !important;
+		min-height:100vh;
+		max-height:100vh;
+		height:100vh  !important;
 		overflow-y: auto;
-        margin-top:30vh;
+        padding-top:30vh;
         padding-left: 6.25vw;
         padding-right:6.25vw;
         padding-bottom:10vh;
         text-align: left !important;
-        z-index: 20000 !important;}
+        z-index: 20000 !important;
+
+}
 
     .content .txt p{
         margin-bottom: 1rem;}

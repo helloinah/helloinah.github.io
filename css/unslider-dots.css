@@ -14,7 +14,7 @@
 .unslider-nav ol {
   list-style: none;
   text-align: center;
-        visibility: hidden;
+    display: none;
 
 }
 .unslider-nav ol li {
@@ -28,11 +28,11 @@
   text-indent: -999em;
   border: 2px solid #fff;
   cursor: pointer;
-    visibility: hidden;
+    display: none;
 }
 .unslider-nav ol li.unslider-active {
   background: #fff;
   cursor: default;
-        visibility: hidden;
+    display: none;
 
 }
