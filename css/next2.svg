@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <style>
+      .\36 6df20c2-a951-4eca-a706-3b7a6c4ea03a {
+        fill: none;
+        stroke: #342dff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .d24a029e-417d-4c33-be6e-2c8ae3436e6b {
+        fill: #342dff;
+      }
+    </style>
+  </defs>
+  <title>자산 10</title>
+  <g id="0e3bdc1c-730e-498d-827d-f08e8f94eed0" data-name="레이어 2">
+    <g id="f83eb489-eaae-45f4-a6a2-3d4893a50643" data-name="레이어 1">
+      <g>
+        <g>
+          <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="0.5" y1="0.5" x2="12.65447" y2="12.65447"/>
+          <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="14.68022" cy="14.68022" r="2.86484" transform="translate(-6.08075 14.68022) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="0.5" y1="0.5" x2="12.65447" y2="12.65447"/>
+          <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="14.68022" cy="14.68022" r="2.86484" transform="translate(-6.08075 14.68022) rotate(-45)"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="0.5" y1="36.5" x2="12.65447" y2="24.34553"/>
+          <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="14.68022" cy="22.31978" r="2.86484" transform="translate(-11.48273 16.91779) rotate(-45)"/>
+        </g>
+        <g>
+          <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="0.5" y1="36.5" x2="12.65447" y2="24.34553"/>
+          <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="14.68022" cy="22.31978" r="2.86484" transform="translate(-11.48273 16.91779) rotate(-45)"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="36.5" y1="36.5" x2="24.34553" y2="24.34553"/>
+            <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="22.31978" cy="22.31978" r="2.86484" transform="translate(-9.24516 22.31978) rotate(-45)"/>
+          </g>
+          <g>
+            <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="36.5" y1="36.5" x2="24.34553" y2="24.34553"/>
+            <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="22.31978" cy="22.31978" r="2.86484" transform="translate(-9.24516 22.31978) rotate(-45)"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="36.5" y1="0.5" x2="24.34553" y2="12.65447"/>
+            <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="22.31978" cy="14.68022" r="2.86484" transform="translate(-3.84317 20.08221) rotate(-45)"/>
+          </g>
+          <g>
+            <line class="66df20c2-a951-4eca-a706-3b7a6c4ea03a" x1="36.5" y1="0.5" x2="24.34553" y2="12.65447"/>
+            <circle class="d24a029e-417d-4c33-be6e-2c8ae3436e6b" cx="22.31978" cy="14.68022" r="2.86484" transform="translate(-3.84317 20.08221) rotate(-45)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

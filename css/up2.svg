@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="36.5" viewBox="0 0 9 36.5">
+  <defs>
+    <style>
+      .\33 28e8b0f-a44e-4ff2-8a09-48db22cf00e5 {
+        fill: none;
+        stroke: #342dff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .c0f7d218-48bf-4c5e-9d9b-e76bd6b4927c {
+        fill: #342dff;
+      }
+    </style>
+  </defs>
+  <title>자산 6</title>
+  <g id="902f30d0-2a80-4aeb-b65a-bd79a810bc01" data-name="레이어 2">
+    <g id="717a3dff-687f-460b-a74d-f21ed3b7a0fa" data-name="레이어 1">
+      <g>
+        <line class="328e8b0f-a44e-4ff2-8a09-48db22cf00e5" x1="4.5" y1="36" x2="4.5" y2="9"/>
+        <circle class="c0f7d218-48bf-4c5e-9d9b-e76bd6b4927c" cx="4.5" cy="4.5" r="4.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
