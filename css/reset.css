@@ -33,7 +33,7 @@ body {
     line-height: 1.25rem;
 	word-break:keep-all;
 	z-index: 1;
-    cursor: url(../css/normal2.svg), auto !important;
+    cursor: url(../css/normal2.svg) 9 9, auto !important;
 }
 
 .ml-ko {
@@ -56,7 +56,7 @@ img {
 a {
 	text-decoration: none;
 	color:#342dff;
-    cursor: url('../css/next.svg'), zoom-in;
+    cursor: url('../css/next.svg') 12 12, zoom-in;
 }
 a img {
 		border: none;
@@ -72,7 +72,7 @@ a img:hover {
 .wrapper {
 	min-width: 100vw;
 	max-width: 100vw;
-	width: 100vw;
+	width: 100vw  !important;
     height:100% !important;
 	min-height:100vh !important;
 	max-height:100vh !important;

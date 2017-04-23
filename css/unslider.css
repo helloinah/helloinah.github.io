@@ -16,7 +16,7 @@
     top: 0vh !important; 
     float: right; 
     right: 0 !important;  
-    cursor: url('../css/next.svg'), e-resize;
+    cursor: url('../css/next.svg') 12 12, e-resize;
 }
 
 .unslider-arrow.next:hover{
@@ -38,7 +38,7 @@
     bottom: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/down.svg'), s-resize;
+    cursor: url('../css/down.svg') 12 12, s-resize;
     z-index: 20000;
 }
 
@@ -49,7 +49,7 @@
     top: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/up.svg'), n-resize;
+    cursor: url('../css/up.svg') 12 12, n-resize;
     z-index: 20000;
 }
 
@@ -60,5 +60,5 @@
     top: 0vh !important; 
     float: left; 
     left: 0 !important;  
-    cursor: url('../css/next.svg'), w-resize;
+    cursor: url('../css/next.svg') 12 12, w-resize;
 }

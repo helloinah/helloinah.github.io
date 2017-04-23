@@ -1,15 +1,9 @@
 ---
 layout: default
 ---
-<div id="m-menu">
-        <div class="top"> <p>about / journal</p> </div>
-        <div class="bottom"> <p>portfolio</p> </div>
-</div>
-
-
 <div id="wrapper">
     
-    <div id="top_journal_wrapper" style="float:left !important;">
+<div id="top_journal_wrapper" style="float:left !important;">
     <div id="top"> 
     <p>In-ah Shin
         <br>Graphic designer, keen observer,
@@ -18,6 +12,9 @@ layout: default
        <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
     </p>
     </div> 
+    <div id="m-menu">
+        <div class="top"> <p>journal</p> </div>
+        <div class="bottom" style="border-left:1px solid #342dff;"> <p>work</p> </div> </div>
     <div id="#journal_wrapper">
 {% for post in site.posts %}
     {% if post.categories contains 'journal' %}
