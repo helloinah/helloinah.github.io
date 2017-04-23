@@ -1,24 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#342DFF;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:6;}
-	.st1{fill:none;stroke:#342DFF;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-<g>
-	<line class="st0" x1="77" y1="76" x2="77" y2="70"/>
-</g>
-<g>
-	<line class="st0" x1="77" y1="58" x2="77" y2="52"/>
-</g>
-<g>
-	<line class="st0" x1="89" y1="64" x2="83" y2="64"/>
-</g>
-<line class="st1" x1="71" y1="64" x2="39" y2="64"/>
-<line class="st1" x1="83" y1="70" x2="80" y2="67"/>
-<line class="st1" x1="74" y1="61" x2="71" y2="58"/>
-<line class="st1" x1="83" y1="58" x2="80" y2="61"/>
-<line class="st1" x1="74" y1="67" x2="71" y2="70"/>
-<circle class="st1" cx="77" cy="64" r="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .\31 f176133-5c6f-4c1f-8407-a3eb452f8e49 {
+        fill: none;
+        stroke: #342dff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>자산 3</title>
+  <g id="f20803e9-db52-4c12-8bf2-dd0136c4fd66" data-name="레이어 2">
+    <g id="34403d0e-2419-43bb-8ccb-972e73680514" data-name="레이어 1">
+      <g>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="12.5" y1="24.5" x2="12.5" y2="18.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="12.5" y1="6.5" x2="12.5" y2="0.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="24.5" y1="12.5" x2="18.5" y2="12.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="6.5" y1="12.5" x2="0.5" y2="12.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="18.5" y1="18.5" x2="15.5" y2="15.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="9.5" y1="9.5" x2="6.5" y2="6.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="18.5" y1="6.5" x2="15.5" y2="9.5"/>
+        <line class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" x1="9.5" y1="15.5" x2="6.5" y2="18.5"/>
+        <circle class="1f176133-5c6f-4c1f-8407-a3eb452f8e49" cx="12.5" cy="12.5" r="2"/>
+      </g>
+    </g>
+  </g>
 </svg>

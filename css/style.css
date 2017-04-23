@@ -237,8 +237,8 @@ video { display: block; }
     width:100%;
     height:auto;
     display: block;
-    padding: 1vw 0;
-
+    margin: 0.5vw 0;
+    padding: 0.5vw 0;
 }
 
 .journal a, .journal a .ml-ko{

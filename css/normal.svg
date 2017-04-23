@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#342DFF;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#342DFF;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-<ellipse class="st0" cx="64" cy="54.8" rx="6" ry="6"/>
-<g>
-	<g>
-		<line class="st1" x1="73" y1="54.8" x2="67" y2="54.8"/>
-		<line class="st1" x1="61" y1="54.8" x2="55" y2="54.8"/>
-	</g>
-	<g>
-		<line class="st1" x1="64" y1="45.8" x2="64" y2="51.8"/>
-		<line class="st1" x1="64" y1="57.8" x2="64" y2="63.8"/>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .\35 a1fa106-592e-4050-aba9-f0f7c2bb69c2 {
+        fill: none;
+        stroke: #342dff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>자산 1</title>
+  <g id="c7aff588-220e-4693-87b4-6272443c98d5" data-name="레이어 2">
+    <g id="76b13551-0fbb-4ee2-a370-55c1a8080e11" data-name="레이어 1">
+      <line class="5a1fa106-592e-4050-aba9-f0f7c2bb69c2" x1="8.5" y1="0.5" x2="8.5" y2="4.5"/>
+      <line class="5a1fa106-592e-4050-aba9-f0f7c2bb69c2" x1="8.5" y1="12.5" x2="8.5" y2="16.5"/>
+      <line class="5a1fa106-592e-4050-aba9-f0f7c2bb69c2" x1="0.5" y1="8.5" x2="4.5" y2="8.5"/>
+      <line class="5a1fa106-592e-4050-aba9-f0f7c2bb69c2" x1="12.5" y1="8.5" x2="16.5" y2="8.5"/>
+      <circle class="5a1fa106-592e-4050-aba9-f0f7c2bb69c2" cx="8.5" cy="8.5" r="2" transform="translate(-3.52082 8.5) rotate(-45)"/>
+    </g>
+  </g>
 </svg>

@@ -11,42 +11,54 @@
 
 .unslider-arrow.next{
     position:absolute; 
-    height: 60vh; 
+    height: 100vh; 
     width: 20vw;
-    top: 20vh !important; 
+    top: 0vh !important; 
     float: right; 
     right: 0 !important;  
-    cursor: url('../css/next.png'), e-resize;
+    cursor: url('../css/next.svg'), e-resize;
 }
 
+.unslider-arrow.next:hover{
+    border-right:0.5vw solid #342dff;
+}
+.unslider-arrow.prev:hover{
+    border-left:0.5vw solid #342dff;
+}
+#down:hover{
+    border-bottom:0.5vw solid #342dff;
+}
+#up:hover{
+    border-top:0.5vw solid #342dff;
+}
 #down{
     position:fixed; 
-    height: 25vh; 
+    height: 20vh; 
     width: 50%;
     bottom: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/down.png'), s-resize;
-    z-index: 10000;
+    cursor: url('../css/down.svg'), s-resize;
+    z-index: 20000;
 }
 
 #up{
     position:fixed; 
-    height: 25vh; 
+    height: 20vh; 
     width: 50%;
     top: 0 !important; 
     float:right; 
     right: 0 !important;  
-    cursor: url('../css/up.png'), n-resize;
-    z-index: 10000;
+    cursor: url('../css/up.svg'), n-resize;
+    z-index: 20000;
 }
 
 .unslider-arrow.prev{
     position:absolute; 
-    height: 60vh; 
+    height: 100vh; 
     width: 20vw;
-    top: 20vh !important; 
+    top: 0vh !important; 
     float: left; 
     left: 0 !important;  
-    cursor: url('../css/next.png'), w-resize;
+    cursor: url('../css/next.svg'), w-resize;
 }
