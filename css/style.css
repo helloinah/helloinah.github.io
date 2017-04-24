@@ -1,24 +1,52 @@
 #m-meun{
     width:100vw;
     min-height:5vh !important;
-    height:auto;
+    height:5vh !important;
     color: #342dff !important; 
     text-align: center !important;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
     display: none;
     overflow: hidden;
-        z-index: 33856;
-
+    z-index: 133856;
+    margin-bottom:0.5rem;
+    background-color:#eee;
 }
 
-#m-menu .top, #m-menu .bottom{
-    width: 50%;
-    border-top: 1px solid #342dff;
+
+.work_bttn, .journal_bttn{
+    color: #342dff !important; 
+    text-align: center !important;
+    position: fixed;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    z-index: 133856;
+    background-color:#eee;
+    width: 50vw;
     height: 5vh;
     padding:1vh;
     z-index: 33856;
     display: none;
     float: left;
+    background-color:#eee;
+    border-top: 1px solid #342dff;
+    border-bottom: 1px solid #342dff;
+    border-left: 1px solid #342dff;
+}
+
+.work_bttn{
+        left: 50vw;
+}
+.journal_bttn{
+    left:0vw;
+}
+
+
+#m-menu .work_bttn, #m-menu .journal_bttn:hover{
+        cursor: url('../css/next.svg') 12 12, e-resize;
+
 }
 
 #m-menu p{
@@ -55,6 +83,7 @@
     top:0 !important; 
     right:0 !important;
     z-index: 1 !important;
+    -webkit-transition: all 0.5s ease-out;
 }
 
 #top{
@@ -206,6 +235,7 @@ video { display: block; }
     overflow:scroll; 
     background-color:#eee;
     z-index: 50;
+    -webkit-transition: all 0.5s ease-out;
 }
 
 #journal_wrapper{
@@ -213,6 +243,7 @@ video { display: block; }
     height: 100vh;
     min-height:100vh !important;
 	max-height:100vh;
+    display: block;
 }
 
 .journal {
@@ -224,6 +255,8 @@ video { display: block; }
     color:#000;
     text-align: left;
     overflow-y: auto;
+        display: block;
+
 }
 
 .journal img{
@@ -251,20 +284,15 @@ video { display: block; }
 
 
 @media screen and (orientation:portrait), (max-width: 667px){
-    body{ overflow: auto !important;
-        height:auto;}
+    body{ }
     
-    #wrapper{
-    overflow: auto;
-    height: auto;
-    display: block;}
+    #wrapper{ width: 200vw;}
     
     #top_journal_wrapper{
         width:100vw !important; 
-        height:auto; 
-        overflow:scroll;
-        position: relative;
-        display: inline-block;
+        position:fixed;
+        left: 0;
+        top: 5vh;
     }
     
     #up {display: none;}
@@ -272,14 +300,18 @@ video { display: block; }
     #handler{
         width:100vw !important;
         height: 100vh;
-        position: relative !important;
-        display: inline-block;
+        position:fixed;
+        left:100vw;
+        top:5vh !important;
     }
     
-    #m-meun{display: block;}
-    #m-menu .top, #m-menu .bottom{
-    display: inline-block;}
     
+    #m-meun{display: block;}
+    .work_bttn{
+    display: inline-block;}
+    .journal_bttn{display: inline-block}
+    .collab{
+        bottom: calc(0.8vw + 5vh);}
 }
 
 @media screen and (orientation:landscape) and (max-width: 768px){
