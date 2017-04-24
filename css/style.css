@@ -26,7 +26,6 @@
     background-color:#eee;
     width: 50vw;
     height: 5vh;
-    padding:1vh;
     z-index: 33856;
     display: none;
     float: left;
@@ -41,6 +40,10 @@
 }
 .journal_bttn{
     left:0vw;
+}
+
+.work_bttn, .journal_bttn p{
+    padding-top: calc(2.5vh - 0.75rem);
 }
 
 
@@ -296,7 +299,7 @@ video { display: block; }
     }
     
     #up {display: none;}
-    #down {display: none;}
+    #down {display: none; width:100vw;}
     #handler{
         width:100vw !important;
         height: 100vh;
@@ -307,8 +310,7 @@ video { display: block; }
     
     
     #m-meun{display: block;}
-    .work_bttn{
-    display: inline-block;}
+    .work_bttn{display: inline-block;}
     .journal_bttn{display: inline-block}
     .collab{
         bottom: calc(0.8vw + 5vh);}
