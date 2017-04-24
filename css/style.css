@@ -285,6 +285,23 @@ video { display: block; }
     margin-bottom: 1rem;
 }
 
+.wait {
+    width:100vw;
+    height:100vw;
+    background-color: #eee;
+    z-index:489549;
+    color: #342dff !important; 
+    text-align: center !important;
+    position: fixed;
+    top: 0;
+    left:0;
+    display: none;
+    border: 1px solid #342dff !important; 
+}
+
+.wait p {
+    margin-top: calc(50vh - 1.5rem);
+}
 
 @media screen and (orientation:portrait), (max-width: 667px){
     body{ }
@@ -318,8 +335,5 @@ video { display: block; }
 
 @media screen and (orientation:landscape) and (max-width: 768px){
     
-    #top{
-        height:50vh;
-    }
-
+    .wait{display:block}
 }
