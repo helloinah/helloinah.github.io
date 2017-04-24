@@ -25,7 +25,9 @@
     z-index: 133856;
     background-color:#eee;
     width: 50vw;
-    height: 5vh;
+    min-height: 28px;
+    min-height: 5vh;
+
     z-index: 33856;
     display: none;
     float: left;
@@ -301,6 +303,17 @@ video { display: block; }
 
 .wait p {
     margin-top: calc(50vh - 1.5rem);
+}
+
+.more {
+    position:fixed;
+    display:none;    z-index: 230912;
+
+}
+
+.more img{
+    width: 10px;
+    height: 10px;
 }
 
 @media screen and (orientation:portrait), (max-width: 667px){
