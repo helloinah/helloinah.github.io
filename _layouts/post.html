@@ -4,57 +4,52 @@ layout: default
 <div id="wrapper">
 <div id="top_journal_wrapper" style="float:left !important;">
     <div id="top"> 
-    <p>In-ah Shin
-        <br>Graphic designer, keen observer.
-        <br>Based in Seoul, South Korea.</p>
-       <p><br><a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a><Br>
-       <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram<Br></a>
-    </p>
+        <p>In-ah Shin
+        <br />Graphic designer, keen observer.
+        <br />Based in Seoul, South Korea.
+        </p>
+        <p>
+        <br />
+        <a href="mailto:info@sceneryoftoday.kr">info@sceneryoftoday.kr</a> 
+        <Br /> 
+            <a href="http://twitter.com/sceneryoftoday" target="_blank">twitter</a> . 
+            <a href="http://instagram.com/sceneryoftoday" target="_blank">instagram</a>
+        <Br />
+        </p>
     </div> 
 </div>
-    <div id="fullpage" style="width:100% !important; z-index:1 !important;">
-        
-
-
-	   		<div class="section">
-					
-	   			<div class="title" id="t{{ page.bg-color-1 }}">
-	   			     <p class="date-category" style="color:#{{ page.bg-color-1 }};">{{ page.date | date: "%Y.%m" }}—{{ page.sub-cat }}</p>
-                    <p class="title-t" style="color:#{{ page.bg-color-1 }};">{{ page.title }}</p>
-                    
-	   			</div>
-                <div class="collab" style="color:#{{ page.bg-color-1 }} !important;">
-                    {% for item in page.collab %}
-                        {{ item in page.collab | markdownify }}
-                    {% endfor %} 
-                </div>
-
-	   		<div class="content" id="c{{ page.bg-color-1 }}" style="background:#{{ page.bg-color-2 }}"> 
-
-	   			<div class="my-slider">
-	   				<ul>
-                        {% for item in page.img %}
-                        <li><div class="img" style="background-image: url('{{ item in page.img | prepend: site.baseurl }}');"> </div></li>
-                        {% endfor %}
-                        						
-	   					{% if page.txt %}<li><div class="txt">
-	   							{{ page.content }}</div>
-	   						</li>
-	   					{% endif %}
-                        
-                        {% if page.vid %}
-                        <li style="width:100%; height:100vh;">
-                            <video autoplay loop id="bgvid">
-                                <source src="{{ page.vid | prepend: site.baseurl }}" type="video/webm">
-                            </video>
-                            
-                        </li>{% endif %}
-
-	   				</ul>
-	   		</div>
-		</div></div>
-
-        </div></div>
-        
-</div>
     
+<div id="fullpage" style="width:100% !important; z-index:1 !important;">
+    <div class="section">
+        <div class="title" id="t{{ page.bg-color-1 }}">
+            <p class="date-category" style="color:#{{ page.bg-color-1 }};">
+                {{ page.date | date: "%Y.%m" }}—{{ page.sub-cat }}
+            </p>
+            <p class="title-t" style="color:#{{ page.bg-color-1 }};">
+                {{ page.title }}
+            </p>
+        </div>
+        <div class="collab" style="color:#{{ page.bg-color-1 }} !important;">
+            {% for item in page.collab %}
+            {{ item in page.collab | markdownify }}
+            {% endfor %} 
+        </div>
+        <div class="content" id="c{{ page.bg-color-1 }}" style="background:#{{ page.bg-color-2 }}"> 
+            <div class="my-slider">
+                <ul>
+                    {% for item in page.img %}
+                    <li><div class="img" style="background-image: url('{{ item in page.img | prepend: site.baseurl }}');"> </div>
+                    </li>
+                    {% endfor %}
+                        						
+	   				{% if page.txt %}
+                    <li>
+                        <div class="txt">{{ page.content }}                 </div>
+	   				</li>
+	   				{% endif %}
+                </ul>
+	   		</div>
+		</div>
+    </div>
+</div>
+</div>
